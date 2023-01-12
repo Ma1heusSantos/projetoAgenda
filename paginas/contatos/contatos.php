@@ -11,15 +11,28 @@
     <header>
         <h3>contatos</h3>
     </header>
-    <table border ="1">
+    <table border ='1'>
         <thead>
-            <tr>ID</tr>
-            <tr>NOME</tr>
-            <tr>E-MAIL</tr>
-            <tr>TELEFONE</tr>
-            <tr>SEXO</tr>
-            <tr>DATA DE NASCIMENTO</tr>
+            <th>ID</th>
+            <th>NOME</th>
+            <th>E-MAIL</th>
+            <th>TELEFONE</th>
+            <th>SEXO</th>
+            <th>DATA DE NASCIMENTO</th>
         </thead>
+        <tbody>
+            <tr>
+                <?php
+                $sql = "SELECT * from contatos";
+                ?>
+                <td>5858</td>
+                <td>Marcos de Melo</td>
+                <td>marcosmelo@hotmai.com</td>
+                <td>33 33333333</td>
+                <td>Masculino</td>
+                <td>07072007</td>
+            </tr>
+        </tbody>
     </table>
 </body>
 </html>
