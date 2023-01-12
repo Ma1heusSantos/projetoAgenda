@@ -1,3 +1,6 @@
+<?php
+include("db/conexao.php");
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -17,6 +20,7 @@
         </nav>
     </header>
     <main>
+    <hr/>
         <?php
         $menuop = (isset($_GET["menuop"])) ? $_GET["menuop"] : "home"; //SE MENUOP EXISTIR PEGUE O VALOR DA VARIAVEL, CASO NÁO EXISTA , DEFINA HOME COMO PADRÃO
         switch ($menuop) {
